@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CSVehicleCollectionViewCell" id="gTV-IL-0wX" customClass="CSVehicleCollectionViewCell" customModule="CarShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-CD-VRB">
+                        <rect key="frame" x="16" y="14" width="132" height="110"/>
+                        <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JY3-CD-VRB" secondAttribute="height" multiplier="1.2:1" id="JxB-wL-zPf"/>
+                            <constraint firstAttribute="width" secondItem="JY3-CD-VRB" secondAttribute="height" multiplier="1:1.2" id="OAS-m9-EWk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OAS-m9-EWk"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WD-Fy-pCX">
+                        <rect key="frame" x="156" y="14" width="148" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-Hq-6ds">
+                        <rect key="frame" x="156" y="42" width="148" height="19.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-1g-ZaQ">
+                        <rect key="frame" x="194" y="109.5" width="110" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-hH-oua">
+                        <rect key="frame" x="156" y="107.5" width="33" height="19"/>
+                        <color key="tintColor" name="turquoise"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="7lG-v7-XiJ"/>
+                            <constraint firstAttribute="height" constant="19" id="koI-RV-vHm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="7WD-Fy-pCX" secondAttribute="trailing" constant="16" id="24A-NQ-Nzj"/>
+                <constraint firstItem="JY3-CD-VRB" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="3u3-ag-mCJ"/>
+                <constraint firstItem="7WD-Fy-pCX" firstAttribute="top" secondItem="JY3-CD-VRB" secondAttribute="top" id="9xb-SS-7rn"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="y9p-Hq-6ds" secondAttribute="trailing" constant="16" id="Ipw-Lw-dfw"/>
+                <constraint firstItem="TfB-1g-ZaQ" firstAttribute="leading" secondItem="Vry-hH-oua" secondAttribute="trailing" constant="5" id="M1k-BV-UAZ"/>
+                <constraint firstItem="JY3-CD-VRB" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="16" id="Q2n-EH-bfY"/>
+                <constraint firstItem="TfB-1g-ZaQ" firstAttribute="bottom" secondItem="JY3-CD-VRB" secondAttribute="bottom" id="Qn7-qN-vqY"/>
+                <constraint firstItem="Vry-hH-oua" firstAttribute="leading" secondItem="JY3-CD-VRB" secondAttribute="trailing" constant="8" id="ZGl-Cj-2Od"/>
+                <constraint firstItem="y9p-Hq-6ds" firstAttribute="firstBaseline" secondItem="7WD-Fy-pCX" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="bJj-ge-Oj8"/>
+                <constraint firstItem="TfB-1g-ZaQ" firstAttribute="firstBaseline" relation="greaterThanOrEqual" secondItem="y9p-Hq-6ds" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="bU3-d2-XmX"/>
+                <constraint firstItem="JY3-CD-VRB" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="e5m-np-juG"/>
+                <constraint firstItem="Vry-hH-oua" firstAttribute="centerY" secondItem="TfB-1g-ZaQ" secondAttribute="centerY" id="lrt-LX-KuW"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="TfB-1g-ZaQ" secondAttribute="trailing" constant="16" id="pyb-mm-Mdi"/>
+                <constraint firstItem="7WD-Fy-pCX" firstAttribute="leading" secondItem="JY3-CD-VRB" secondAttribute="trailing" constant="8" id="xfW-8Q-FcK"/>
+                <constraint firstItem="y9p-Hq-6ds" firstAttribute="leading" secondItem="JY3-CD-VRB" secondAttribute="trailing" constant="8" id="zxu-1g-hhn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="509" height="138"/>
+            <connections>
+                <outlet property="categoryImageView" destination="Vry-hH-oua" id="B6d-NE-Npu"/>
+                <outlet property="distanceLabel" destination="TfB-1g-ZaQ" id="uev-lc-dw5"/>
+                <outlet property="imageView" destination="JY3-CD-VRB" id="3sX-bw-7dS"/>
+                <outlet property="infoLabel" destination="y9p-Hq-6ds" id="WKI-RZ-XJb"/>
+                <outlet property="nameLabel" destination="7WD-Fy-pCX" id="ZhA-PC-8fI"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="177"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="car_placeholder" width="150" height="150"/>
+        <namedColor name="turquoise">
+            <color red="0.17647058823529413" green="0.90196078431372551" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

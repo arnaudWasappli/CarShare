@@ -17,11 +17,31 @@ class CSMainViewController: UIViewController {
         }
     }
     
+    let listViewController = CSListCarViewController()
+    let mapViewController = CSMapCarViewController()
     let filterViewController = CSFilterViewController()
     
     override func loadView() {
         super.loadView()
         
+        addChildViewController(listViewController)
+        view.addSubview(listViewController.view)
+        listViewController.didMove(toParentViewController: self)
+        
+        listViewController.view.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        mapViewController.view.isHidden = true
+        addChildViewController(mapViewController)
+        view.addSubview(mapViewController.view)
+        mapViewController.didMove(toParentViewController: self)
+        
+        mapViewController.view.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        filterViewController.pullUpControllerDelegate = self
         addPullUpController(filterViewController)
     }
     
@@ -38,7 +58,7 @@ class CSMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "CarShare"
+        title = "CarShare".localized
         
         view.backgroundColor = .white
         
@@ -59,7 +79,17 @@ class CSMainViewController: UIViewController {
     }
     
     @objc func switchMapListTouched(_ sender: UISegmentedControl?) {
+        let transitionOptions: UIViewAnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
+        let duration: TimeInterval = 0.4
+        let firstView: UIView = sender?.selectedSegmentIndex == 0 ? mapViewController.view : listViewController.view
+        let secondView: UIView = sender?.selectedSegmentIndex == 0 ? listViewController.view : mapViewController.view
         
+        UIView.transition(with: firstView, duration: duration, options: transitionOptions, animations: {
+            firstView.isHidden = true
+        })
+        UIView.transition(with: secondView, duration: duration, options: transitionOptions, animations: {
+            secondView.isHidden = false
+        })
     }
     
     @objc func refreshData() {
@@ -91,5 +121,15 @@ class CSMainViewController: UIViewController {
                 return true
             })
         }
+        
+        listViewController.reload(with: filteredData)
+        mapViewController.reload(with: filteredData)
+    }
+}
+
+extension CSMainViewController: PullUpControllerDelegate {
+    
+    func pullUpControllerDidScroll(_ pullUpController: PullUpController) {
+        listViewController.minimumOffset = pullUpController.currentTopOffset ?? listViewController.minimumOffset
     }
 }
