@@ -1,0 +1,38 @@
+PODS:
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - DZNEmptyDataSet (1.8.1)
+  - Fabric (1.7.2)
+  - Kingfisher (4.2.0)
+  - PullUpController (0.1.0)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - DZNEmptyDataSet
+  - Fabric
+  - Kingfisher
+  - PullUpController (from `https://github.com/arnaudWasappli/PullUpController.git`, commit `b5532e8bad85bd1383bfd1682a1bc76756b05a73`)
+  - SnapKit
+
+EXTERNAL SOURCES:
+  PullUpController:
+    :commit: b5532e8bad85bd1383bfd1682a1bc76756b05a73
+    :git: https://github.com/arnaudWasappli/PullUpController.git
+
+CHECKOUT OPTIONS:
+  PullUpController:
+    :commit: b5532e8bad85bd1383bfd1682a1bc76756b05a73
+    :git: https://github.com/arnaudWasappli/PullUpController.git
+
+SPEC CHECKSUMS:
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  PullUpController: e54aee2889bb54aeddc5af7665711312974eb1be
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 1ff7d811605abf40f9de54e469e3f54f56af1708
+
+COCOAPODS: 1.3.1

@@ -2,20 +2,27 @@
 //  AppDelegate.swift
 //  CarShare
 //
-//  Created by Arnaud on 17-11-14.
+//  Created by Arnaud Lays on 17-11-14.
 //  Copyright © 2017 Arnaud Lays. All rights reserved.
 //
 
 import UIKit
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+
+        let controller = CSMainViewController()
+        let navController = CSNavigationViewController(rootViewController: controller)
+        self.window?.rootViewController = navController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -7,25 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6BD2E13014B3BBB02BFBDA /* Pods_CarShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9E40EB5D1D42DF5E67165 /* Pods_CarShare.framework */; };
 		C951CDA61FBB8B6700208F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDA51FBB8B6700208F0D /* AppDelegate.swift */; };
-		C951CDA81FBB8B6700208F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDA71FBB8B6700208F0D /* ViewController.swift */; };
-		C951CDAB1FBB8B6700208F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C951CDA91FBB8B6700208F0D /* Main.storyboard */; };
-		C951CDAD1FBB8B6700208F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C951CDAC1FBB8B6700208F0D /* Assets.xcassets */; };
 		C951CDB01FBB8B6700208F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C951CDAE1FBB8B6700208F0D /* LaunchScreen.storyboard */; };
+		C951CDB91FBB944200208F0D /* CSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDB81FBB944200208F0D /* CSMainViewController.swift */; };
+		C951CDBB1FBB9D1600208F0D /* CSNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDBA1FBB9D1600208F0D /* CSNavigationViewController.swift */; };
+		C951CDBE1FBB9D9A00208F0D /* UIColor+CarShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDBD1FBB9D9A00208F0D /* UIColor+CarShare.swift */; };
+		C951CDC11FBBA30700208F0D /* TestTechniqueKoolicariOS.json in Resources */ = {isa = PBXBuildFile; fileRef = C951CDC01FBBA30600208F0D /* TestTechniqueKoolicariOS.json */; };
+		C951CDC61FBBA41200208F0D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C951CDC81FBBA41200208F0D /* Localizable.strings */; };
+		C951CDCB1FBBA48B00208F0D /* String+CarShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */; };
+		C951CDCD1FBBA9E700208F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C951CDAC1FBB8B6700208F0D /* Assets.xcassets */; };
+		C9531C8C1FBDFDE800213C45 /* CSVehicleComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C8B1FBDFDE800213C45 /* CSVehicleComponents.swift */; };
+		C9531C8E1FBE01D500213C45 /* CSVehicleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C8D1FBE01D500213C45 /* CSVehicleDataManager.swift */; };
+		C9531C911FBE0F3B00213C45 /* CSFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C901FBE0F3B00213C45 /* CSFilterViewController.swift */; };
+		C9531C931FBE3C9200213C45 /* CSFilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C921FBE3C9200213C45 /* CSFilterManager.swift */; };
+		C9531C9C1FBE476200213C45 /* CarShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C9B1FBE476200213C45 /* CarShareTests.swift */; };
+		C9531CA41FBE482A00213C45 /* CSFilterManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531CA31FBE482A00213C45 /* CSFilterManagerTests.swift */; };
+		C9531CA51FBE487800213C45 /* CSFilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C921FBE3C9200213C45 /* CSFilterManager.swift */; };
+		C9531CA71FBE49BB00213C45 /* CSVehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531CA61FBE49BB00213C45 /* CSVehicleTests.swift */; };
+		C9531CA91FBE4A5F00213C45 /* TestVehicleNissanMicra.json in Resources */ = {isa = PBXBuildFile; fileRef = C9531CA81FBE4A5E00213C45 /* TestVehicleNissanMicra.json */; };
+		C9531CAA1FBE4B5E00213C45 /* CSVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */; };
+		C9531CAB1FBE4B6700213C45 /* CSVehicleComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C8B1FBDFDE800213C45 /* CSVehicleComponents.swift */; };
+		C9531CAC1FBE4B6E00213C45 /* String+CarShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */; };
+		C9531CAD1FBE4EC600213C45 /* CSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE0A151FBBEF8400E6611B /* CSService.swift */; };
+		C9531CAE1FBE525300213C45 /* CSVehicleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C8D1FBE01D500213C45 /* CSVehicleDataManager.swift */; };
+		C989DC6E1FBBAD2D0074B2E8 /* CSVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */; };
+		C989DC701FBCA9440074B2E8 /* CSMapCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC6F1FBCA9440074B2E8 /* CSMapCarViewController.swift */; };
+		C989DC721FBCD1520074B2E8 /* CSListCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC711FBCD1520074B2E8 /* CSListCarViewController.swift */; };
+		C9CE0A161FBBEF8400E6611B /* CSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE0A151FBBEF8400E6611B /* CSService.swift */; };
+		C9CE0A1A1FBBFE3C00E6611B /* CSVehicleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE0A181FBBFE3C00E6611B /* CSVehicleCollectionViewCell.swift */; };
+		C9CE0A1B1FBBFE3C00E6611B /* CSVehicleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CE0A191FBBFE3C00E6611B /* CSVehicleCollectionViewCell.xib */; };
+		C9DD731D1FBCDB210074EF7A /* CSVehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD731C1FBCDB210074EF7A /* CSVehicleAnnotation.swift */; };
+		C9DD731F1FBCDCC20074EF7A /* CSVehicleMapPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD731E1FBCDCC20074EF7A /* CSVehicleMapPinView.swift */; };
+		C9DD73211FBCDDCB0074EF7A /* CSVehicleClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD73201FBCDDCB0074EF7A /* CSVehicleClusterView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C9531C9E1FBE476200213C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C951CD9A1FBB8B6700208F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C951CDA11FBB8B6700208F0D;
+			remoteInfo = CarShare;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		67F9E40EB5D1D42DF5E67165 /* Pods_CarShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1F948B7BF3C1E92F494396 /* Pods-CarShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarShare/Pods-CarShare.release.xcconfig"; sourceTree = "<group>"; };
 		C951CDA21FBB8B6700208F0D /* CarShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C951CDA51FBB8B6700208F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C951CDA71FBB8B6700208F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C951CDAA1FBB8B6700208F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C951CDAC1FBB8B6700208F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C951CDAF1FBB8B6700208F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C951CDB11FBB8B6700208F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C951CDB81FBB944200208F0D /* CSMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainViewController.swift; sourceTree = "<group>"; };
+		C951CDBA1FBB9D1600208F0D /* CSNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSNavigationViewController.swift; sourceTree = "<group>"; };
+		C951CDBD1FBB9D9A00208F0D /* UIColor+CarShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CarShare.swift"; sourceTree = "<group>"; };
+		C951CDC01FBBA30600208F0D /* TestTechniqueKoolicariOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestTechniqueKoolicariOS.json; sourceTree = "<group>"; };
+		C951CDC71FBBA41200208F0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C951CDC91FBBA42700208F0D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CarShare.swift"; sourceTree = "<group>"; };
+		C9531C8B1FBDFDE800213C45 /* CSVehicleComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleComponents.swift; sourceTree = "<group>"; };
+		C9531C8D1FBE01D500213C45 /* CSVehicleDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleDataManager.swift; sourceTree = "<group>"; };
+		C9531C901FBE0F3B00213C45 /* CSFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSFilterViewController.swift; sourceTree = "<group>"; };
+		C9531C921FBE3C9200213C45 /* CSFilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSFilterManager.swift; sourceTree = "<group>"; };
+		C9531C991FBE476200213C45 /* CarShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9531C9B1FBE476200213C45 /* CarShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShareTests.swift; sourceTree = "<group>"; };
+		C9531C9D1FBE476200213C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9531CA31FBE482A00213C45 /* CSFilterManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSFilterManagerTests.swift; sourceTree = "<group>"; };
+		C9531CA61FBE49BB00213C45 /* CSVehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleTests.swift; sourceTree = "<group>"; };
+		C9531CA81FBE4A5E00213C45 /* TestVehicleNissanMicra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestVehicleNissanMicra.json; sourceTree = "<group>"; };
+		C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicle.swift; sourceTree = "<group>"; };
+		C989DC6F1FBCA9440074B2E8 /* CSMapCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMapCarViewController.swift; sourceTree = "<group>"; };
+		C989DC711FBCD1520074B2E8 /* CSListCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSListCarViewController.swift; sourceTree = "<group>"; };
+		C9CE0A151FBBEF8400E6611B /* CSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSService.swift; sourceTree = "<group>"; };
+		C9CE0A181FBBFE3C00E6611B /* CSVehicleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9CE0A191FBBFE3C00E6611B /* CSVehicleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSVehicleCollectionViewCell.xib; sourceTree = "<group>"; };
+		C9DD731C1FBCDB210074EF7A /* CSVehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleAnnotation.swift; sourceTree = "<group>"; };
+		C9DD731E1FBCDCC20074EF7A /* CSVehicleMapPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleMapPinView.swift; sourceTree = "<group>"; };
+		C9DD73201FBCDDCB0074EF7A /* CSVehicleClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleClusterView.swift; sourceTree = "<group>"; };
+		F8CBBC347384692EAD4F0E5D /* Pods-CarShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarShare/Pods-CarShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C951CD9F1FBB8B6700208F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6BD2E13014B3BBB02BFBDA /* Pods_CarShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9531C961FBE476200213C45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,11 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467EAA4C21ED1E7A447A3E48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8CBBC347384692EAD4F0E5D /* Pods-CarShare.debug.xcconfig */,
+				7E1F948B7BF3C1E92F494396 /* Pods-CarShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C951CD991FBB8B6700208F0D = {
 			isa = PBXGroup;
 			children = (
 				C951CDA41FBB8B6700208F0D /* CarShare */,
+				C9531C9A1FBE476200213C45 /* CarShareTests */,
 				C951CDA31FBB8B6700208F0D /* Products */,
+				467EAA4C21ED1E7A447A3E48 /* Pods */,
+				E6149A87DF41EBE8897CEB55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C951CDA21FBB8B6700208F0D /* CarShare.app */,
+				C9531C991FBE476200213C45 /* CarShareTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +140,107 @@
 		C951CDA41FBB8B6700208F0D /* CarShare */ = {
 			isa = PBXGroup;
 			children = (
+				C9CE0A171FBBFE1200E6611B /* Views */,
+				C951CDC31FBBA33500208F0D /* Models */,
+				C951CDC21FBBA32F00208F0D /* Services */,
 				C951CDA51FBB8B6700208F0D /* AppDelegate.swift */,
-				C951CDA71FBB8B6700208F0D /* ViewController.swift */,
-				C951CDA91FBB8B6700208F0D /* Main.storyboard */,
-				C951CDAC1FBB8B6700208F0D /* Assets.xcassets */,
-				C951CDAE1FBB8B6700208F0D /* LaunchScreen.storyboard */,
+				C951CDB71FBB942100208F0D /* Controllers */,
+				C951CDBC1FBB9D7600208F0D /* Extensions */,
 				C951CDB11FBB8B6700208F0D /* Info.plist */,
+				C951CDBF1FBBA2A400208F0D /* Ressources */,
 			);
 			path = CarShare;
+			sourceTree = "<group>";
+		};
+		C951CDB71FBB942100208F0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C951CDB81FBB944200208F0D /* CSMainViewController.swift */,
+				C951CDBA1FBB9D1600208F0D /* CSNavigationViewController.swift */,
+				C989DC711FBCD1520074B2E8 /* CSListCarViewController.swift */,
+				C989DC6F1FBCA9440074B2E8 /* CSMapCarViewController.swift */,
+				C9531C901FBE0F3B00213C45 /* CSFilterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C951CDBC1FBB9D7600208F0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C951CDBD1FBB9D9A00208F0D /* UIColor+CarShare.swift */,
+				C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C951CDBF1FBBA2A400208F0D /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				C951CDAC1FBB8B6700208F0D /* Assets.xcassets */,
+				C951CDAE1FBB8B6700208F0D /* LaunchScreen.storyboard */,
+				C951CDC01FBBA30600208F0D /* TestTechniqueKoolicariOS.json */,
+				C951CDC81FBBA41200208F0D /* Localizable.strings */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		C951CDC21FBBA32F00208F0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE0A151FBBEF8400E6611B /* CSService.swift */,
+				C9531C921FBE3C9200213C45 /* CSFilterManager.swift */,
+				C9531C8D1FBE01D500213C45 /* CSVehicleDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C951CDC31FBBA33500208F0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */,
+				C9531C8B1FBDFDE800213C45 /* CSVehicleComponents.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9531C9A1FBE476200213C45 /* CarShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9531CA81FBE4A5E00213C45 /* TestVehicleNissanMicra.json */,
+				C9531C9B1FBE476200213C45 /* CarShareTests.swift */,
+				C9531C9D1FBE476200213C45 /* Info.plist */,
+				C9531CA31FBE482A00213C45 /* CSFilterManagerTests.swift */,
+				C9531CA61FBE49BB00213C45 /* CSVehicleTests.swift */,
+			);
+			path = CarShareTests;
+			sourceTree = "<group>";
+		};
+		C9CE0A171FBBFE1200E6611B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD731B1FBCDB060074EF7A /* Map */,
+				C9CE0A181FBBFE3C00E6611B /* CSVehicleCollectionViewCell.swift */,
+				C9CE0A191FBBFE3C00E6611B /* CSVehicleCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9DD731B1FBCDB060074EF7A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD731C1FBCDB210074EF7A /* CSVehicleAnnotation.swift */,
+				C9DD731E1FBCDCC20074EF7A /* CSVehicleMapPinView.swift */,
+				C9DD73201FBCDDCB0074EF7A /* CSVehicleClusterView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E6149A87DF41EBE8897CEB55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F9E40EB5D1D42DF5E67165 /* Pods_CarShare.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C951CDB41FBB8B6700208F0D /* Build configuration list for PBXNativeTarget "CarShare" */;
 			buildPhases = (
+				4B2A1E1655C56D215C707921 /* [CP] Check Pods Manifest.lock */,
 				C951CD9E1FBB8B6700208F0D /* Sources */,
 				C951CD9F1FBB8B6700208F0D /* Frameworks */,
 				C951CDA01FBB8B6700208F0D /* Resources */,
+				39E06C4119DD54CA6D5C66AC /* [CP] Embed Pods Frameworks */,
+				D920FC2DB9D4D3980AB22069 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -83,6 +265,24 @@
 			productName = CarShare;
 			productReference = C951CDA21FBB8B6700208F0D /* CarShare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C9531C981FBE476200213C45 /* CarShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9531CA01FBE476200213C45 /* Build configuration list for PBXNativeTarget "CarShareTests" */;
+			buildPhases = (
+				C9531C951FBE476200213C45 /* Sources */,
+				C9531C961FBE476200213C45 /* Frameworks */,
+				C9531C971FBE476200213C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9531C9F1FBE476200213C45 /* PBXTargetDependency */,
+			);
+			name = CarShareTests;
+			productName = CarShareTests;
+			productReference = C9531C991FBE476200213C45 /* CarShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +298,11 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					C9531C981FBE476200213C45 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C951CDA11FBB8B6700208F0D;
+					};
 				};
 			};
 			buildConfigurationList = C951CD9D1FBB8B6700208F0D /* Build configuration list for PBXProject "CarShare" */;
@@ -107,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = C951CD991FBB8B6700208F0D;
 			productRefGroup = C951CDA31FBB8B6700208F0D /* Products */;
@@ -114,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				C951CDA11FBB8B6700208F0D /* CarShare */,
+				C9531C981FBE476200213C45 /* CarShareTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,40 +331,150 @@
 			buildActionMask = 2147483647;
 			files = (
 				C951CDB01FBB8B6700208F0D /* LaunchScreen.storyboard in Resources */,
-				C951CDAD1FBB8B6700208F0D /* Assets.xcassets in Resources */,
-				C951CDAB1FBB8B6700208F0D /* Main.storyboard in Resources */,
+				C951CDC61FBBA41200208F0D /* Localizable.strings in Resources */,
+				C951CDCD1FBBA9E700208F0D /* Assets.xcassets in Resources */,
+				C9CE0A1B1FBBFE3C00E6611B /* CSVehicleCollectionViewCell.xib in Resources */,
+				C951CDC11FBBA30700208F0D /* TestTechniqueKoolicariOS.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9531C971FBE476200213C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9531CA91FBE4A5F00213C45 /* TestVehicleNissanMicra.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39E06C4119DD54CA6D5C66AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarShare/Pods-CarShare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PullUpController/PullUpController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullUpController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarShare/Pods-CarShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2A1E1655C56D215C707921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D920FC2DB9D4D3980AB22069 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarShare/Pods-CarShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C951CD9E1FBB8B6700208F0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C951CDA81FBB8B6700208F0D /* ViewController.swift in Sources */,
+				C951CDCB1FBBA48B00208F0D /* String+CarShare.swift in Sources */,
+				C9531C931FBE3C9200213C45 /* CSFilterManager.swift in Sources */,
+				C9DD731D1FBCDB210074EF7A /* CSVehicleAnnotation.swift in Sources */,
+				C9531C911FBE0F3B00213C45 /* CSFilterViewController.swift in Sources */,
+				C989DC721FBCD1520074B2E8 /* CSListCarViewController.swift in Sources */,
+				C951CDBB1FBB9D1600208F0D /* CSNavigationViewController.swift in Sources */,
+				C9CE0A161FBBEF8400E6611B /* CSService.swift in Sources */,
+				C989DC701FBCA9440074B2E8 /* CSMapCarViewController.swift in Sources */,
+				C9531C8E1FBE01D500213C45 /* CSVehicleDataManager.swift in Sources */,
+				C9DD731F1FBCDCC20074EF7A /* CSVehicleMapPinView.swift in Sources */,
+				C9CE0A1A1FBBFE3C00E6611B /* CSVehicleCollectionViewCell.swift in Sources */,
+				C989DC6E1FBBAD2D0074B2E8 /* CSVehicle.swift in Sources */,
 				C951CDA61FBB8B6700208F0D /* AppDelegate.swift in Sources */,
+				C9531C8C1FBDFDE800213C45 /* CSVehicleComponents.swift in Sources */,
+				C9DD73211FBCDDCB0074EF7A /* CSVehicleClusterView.swift in Sources */,
+				C951CDBE1FBB9D9A00208F0D /* UIColor+CarShare.swift in Sources */,
+				C951CDB91FBB944200208F0D /* CSMainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9531C951FBE476200213C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9531CAC1FBE4B6E00213C45 /* String+CarShare.swift in Sources */,
+				C9531CAD1FBE4EC600213C45 /* CSService.swift in Sources */,
+				C9531CAB1FBE4B6700213C45 /* CSVehicleComponents.swift in Sources */,
+				C9531CA71FBE49BB00213C45 /* CSVehicleTests.swift in Sources */,
+				C9531C9C1FBE476200213C45 /* CarShareTests.swift in Sources */,
+				C9531CA41FBE482A00213C45 /* CSFilterManagerTests.swift in Sources */,
+				C9531CAE1FBE525300213C45 /* CSVehicleDataManager.swift in Sources */,
+				C9531CAA1FBE4B5E00213C45 /* CSVehicle.swift in Sources */,
+				C9531CA51FBE487800213C45 /* CSFilterManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		C951CDA91FBB8B6700208F0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C951CDAA1FBB8B6700208F0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		C9531C9F1FBE476200213C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C951CDA11FBB8B6700208F0D /* CarShare */;
+			targetProxy = C9531C9E1FBE476200213C45 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		C951CDAE1FBB8B6700208F0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C951CDAF1FBB8B6700208F0D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C951CDC81FBBA41200208F0D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C951CDC71FBBA41200208F0D /* en */,
+				C951CDC91FBBA42700208F0D /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -167,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -224,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -272,31 +591,65 @@
 		};
 		C951CDB51FBB8B6700208F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8CBBC347384692EAD4F0E5D /* Pods-CarShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ARB5HT849;
+				DEVELOPMENT_TEAM = 8GCFPHGY5V;
 				INFOPLIST_FILE = CarShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lay.arnaud.CarShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C951CDB61FBB8B6700208F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E1F948B7BF3C1E92F494396 /* Pods-CarShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ARB5HT849;
+				DEVELOPMENT_TEAM = 8GCFPHGY5V;
 				INFOPLIST_FILE = CarShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lay.arnaud.CarShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C9531CA11FBE476200213C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GCFPHGY5V;
+				INFOPLIST_FILE = CarShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lay.arnaud.CarShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarShare.app/CarShare";
+			};
+			name = Debug;
+		};
+		C9531CA21FBE476200213C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GCFPHGY5V;
+				INFOPLIST_FILE = CarShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lay.arnaud.CarShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarShare.app/CarShare";
 			};
 			name = Release;
 		};
@@ -317,6 +670,15 @@
 			buildConfigurations = (
 				C951CDB51FBB8B6700208F0D /* Debug */,
 				C951CDB61FBB8B6700208F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9531CA01FBE476200213C45 /* Build configuration list for PBXNativeTarget "CarShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9531CA11FBE476200213C45 /* Debug */,
+				C9531CA21FBE476200213C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
