@@ -109,7 +109,7 @@ class CSMainViewController: UIViewController {
                     }
                 }
                 if onlyFiveDoorsAndMoreVehicle {
-                    if ($0.doorsCount ?? 0) < 10 {
+                    if ($0.doorsCount ?? 0) < 5 {
                         return false
                     }
                 }
