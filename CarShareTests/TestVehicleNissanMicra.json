@@ -1,0 +1,16 @@
+{
+    "address_id": 70076,
+    "id": 10749,
+    "year": 2012,
+    "doors_count": 5,
+    "places_count": 5,
+    "fuel_type_cd": 0,
+    "gears_type_cd": 1,
+    "vehicle_model": "Micra",
+    "brand": "Nissan",
+    "category": "CITADINE",
+    "thumbnail_url": "https://koolicar.s3.amazonaws.com/uploads/photo/6103/thumb_2015-11-09_16.13.02.jpg",
+    "distance_string": "Paris 11'e8me",
+    "fake_latitude": 48.8619248152841,
+    "fake_longitude": 2.38026285387939
+}
