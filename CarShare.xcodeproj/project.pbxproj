@@ -31,6 +31,7 @@
 		C9531CAC1FBE4B6E00213C45 /* String+CarShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */; };
 		C9531CAD1FBE4EC600213C45 /* CSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE0A151FBBEF8400E6611B /* CSService.swift */; };
 		C9531CAE1FBE525300213C45 /* CSVehicleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531C8D1FBE01D500213C45 /* CSVehicleDataManager.swift */; };
+		C9531CB01FBE630800213C45 /* Map+CarShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9531CAF1FBE630800213C45 /* Map+CarShare.swift */; };
 		C989DC6E1FBBAD2D0074B2E8 /* CSVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */; };
 		C989DC701FBCA9440074B2E8 /* CSMapCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC6F1FBCA9440074B2E8 /* CSMapCarViewController.swift */; };
 		C989DC721FBCD1520074B2E8 /* CSListCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C989DC711FBCD1520074B2E8 /* CSListCarViewController.swift */; };
@@ -77,6 +78,7 @@
 		C9531CA31FBE482A00213C45 /* CSFilterManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSFilterManagerTests.swift; sourceTree = "<group>"; };
 		C9531CA61FBE49BB00213C45 /* CSVehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicleTests.swift; sourceTree = "<group>"; };
 		C9531CA81FBE4A5E00213C45 /* TestVehicleNissanMicra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestVehicleNissanMicra.json; sourceTree = "<group>"; };
+		C9531CAF1FBE630800213C45 /* Map+CarShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+CarShare.swift"; sourceTree = "<group>"; };
 		C989DC6D1FBBAD2D0074B2E8 /* CSVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVehicle.swift; sourceTree = "<group>"; };
 		C989DC6F1FBCA9440074B2E8 /* CSMapCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMapCarViewController.swift; sourceTree = "<group>"; };
 		C989DC711FBCD1520074B2E8 /* CSListCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSListCarViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				C951CDBD1FBB9D9A00208F0D /* UIColor+CarShare.swift */,
 				C951CDCA1FBBA48B00208F0D /* String+CarShare.swift */,
+				C9531CAF1FBE630800213C45 /* Map+CarShare.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				C951CDCB1FBBA48B00208F0D /* String+CarShare.swift in Sources */,
 				C9531C931FBE3C9200213C45 /* CSFilterManager.swift in Sources */,
 				C9DD731D1FBCDB210074EF7A /* CSVehicleAnnotation.swift in Sources */,
+				C9531CB01FBE630800213C45 /* Map+CarShare.swift in Sources */,
 				C9531C911FBE0F3B00213C45 /* CSFilterViewController.swift in Sources */,
 				C989DC721FBCD1520074B2E8 /* CSListCarViewController.swift in Sources */,
 				C951CDBB1FBB9D1600208F0D /* CSNavigationViewController.swift in Sources */,
